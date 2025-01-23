@@ -16,6 +16,9 @@
     body {
       background-color: #FFD100;
       color: #000;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     header {
@@ -102,11 +105,32 @@
       font-size: 0.95rem;
     }
 
+    .customers {
+      text-align: center;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .customer-images {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .customer-images img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+    }
+
     .footer {
       text-align: center;
       padding: 2rem;
       background-color: #000;
       color: #fff;
+      margin-top: auto;
     }
 
   </style>
@@ -114,36 +138,30 @@
 <body>
   <header>
     <div class="logo">Logo / Název</div>
-    <nav>
-      <a href="#home">Domů</a>
-      <a href="#about">O nás</a>
-      <a href="#contact">Kontakt</a>
-    </nav>
   </header>
 
   <section class="hero" id="home">
     <h1>State of Software Modernization</h1>
-    <p>Modernizujte své aplikace a systémy s využitím osvědčených postupů. Získejte náš e-book a zjistěte, jak na to.</p>
-    <a class="cta-btn" href="#ebook">Stáhnout e-book</a>
+    <p>Potřebujete poradit s modernizací softwarových systémů? </p>
+    <a class="cta-btn" href="mailto:jurasek.tomas@gmail.com">Kontaktujte nás</a>
   </section>
 
   <section class="benefits">
     <div class="benefit-box">
-      <h3>Benefit 1</h3>
-      <p>Krátký popis hlavní výhody.</p>
+      <h3>Vzdělání</h3>
+      <p>Nabízíme kurzy a workshopy v oblasti distribuovaných systémů</p>
     </div>
     <div class="benefit-box">
-      <h3>Benefit 2</h3>
-      <p>Krátký popis hlavní výhody.</p>
+      <h3>Návrh</h3>
+      <p>Pomůžeme Vám navrhnout správnou sotwarovou architekturu.</p>
     </div>
     <div class="benefit-box">
-      <h3>Benefit 3</h3>
-      <p>Krátký popis hlavní výhody.</p>
+      <h3>Realizace</h3>
+      <p>Pomůžeme Vám s realizací. Máme zkušenosti s .NET ekosystémem.</p>
     </div>
   </section>
-
   <footer class="footer">
-    <p>&copy; 2025 Tvá Společnost – Všechna práva vyhrazena</p>
+    <p>&copy; 2025 </p>
   </footer>
 </body>
 </html>

@@ -43,9 +43,15 @@
     }
 
     .hero h1 {
-      font-size: 5rem;
+      font-size: 3rem;
       margin-bottom: 1rem;
       font-weight: 700;
+    }
+
+    @media (min-width: 768px) { 
+      .hero h1 {
+        font-size: 5rem; 
+      }
     }
 
     .hero p {
@@ -91,14 +97,16 @@
       background-color: rgba(255, 255, 255, 0.1);
       flex: 1 1 250px;
       min-width: 250px;
+      min-height: 250px;
       padding: 2rem;
-      text-align: center;
+      text-align: left;
       border-radius: 4px;
     }
 
     .benefit-box h3 {
       margin-bottom: 0.5rem;
       font-weight: 600;
+      text-align: center;
     }
 
     .benefit-box p {
@@ -133,6 +141,10 @@
       margin-top: auto;
     }
 
+    a {
+      position: relative;
+  }
+
   </style>
 </head>
 <body>
@@ -149,15 +161,15 @@
   <section class="benefits">
     <div class="benefit-box">
       <h3>Vzdělání</h3>
-      <p>Nabízíme vzdělání pro Vaše lidi v oblasti distribuovaných systémů.</p>
+      <p>Nabízíme vzdělání v oblasti distribuovaných systémů - mikroslužby, event-driven architektura, integrační patterny, messaging a mnoho další.</p>
     </div>
     <div class="benefit-box">
       <h3>Návrh</h3>
-      <p>Pomůžeme Vám navrhnout správnou sotwarovou architekturu.</p>
+      <p>Pomůžeme Vám navrhnout správnou sotwarovou architekturu, která bude reflektovat Vaše potřeby.</p>
     </div>
     <div class="benefit-box">
       <h3>Realizace</h3>
-      <p>Máme bohaté zkušenosti v .NET ekosystému. Pomůžeme Vám s realizací.</p>
+      <p>Máme bohaté zkušenosti s tvorbou složitých systémů .NET ekosystému. Pomůžeme Vám s realizací.</p>
     </div>
   </section>
   <footer class="footer">
